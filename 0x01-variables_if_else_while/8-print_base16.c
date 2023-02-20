@@ -1,26 +1,19 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 /**
- * Program that prints all the numbers of base 16 in lowercase, followed by a new line.
- * You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
- * All your code should be in the main function
- * You can only use putchar three times in your code
+ * It is a program that prints all the numbers of base 16 in lowercase, followed by a new line.
  */
-
 int main(void)
 {
-int num = 48;
-int l = 'a';
-while (num <= 57)
-{
-putchar(num);
-num += 1;
-}
-while (l <= 'f')
-{
-putchar(l);
-l++;
-}
-putchar('\n');
-return (0);
+	int num;
+	char letter;
+
+	for (num = '0'; num <= '9'; num++)
+		putchar(num);
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+		putchar('\n');
+
+	return (0);
 }
