@@ -10,10 +10,17 @@
 
 int main(void)
 {
+<<<<<<< HEAD
 	int number;
 
 	for (number = 0; number < 10; number++)
 		putchar((number % 10) + '0');
+=======
+	int num;
+
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+>>>>>>> 4af23ed915d933465ab9e964884823bbaade095e
 
 	putchar('\n');
 
