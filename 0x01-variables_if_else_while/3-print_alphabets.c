@@ -2,23 +2,21 @@
 
 /**
  * main - program that prints the alphabet in lowercase, and then in uppercase,
- * You can only use the putchar
- * Return: 0
- */
+  */
 
 int main(void)
 {
-int lw = 'a';
-int up = 'A';
-while (lw <= 'z')
+int lower = 'a';
+int upper = 'A';
+while (lower <= 'z')
 {
-putchar(lw);
-lw += 1;
+putchar(lower);
+lower += 1;
 }
-while (up <= 'Z')
+while (upper <= 'Z')
 {
 putchar(up);
-up += 1;
+upper += 1;
 }
 putchar('\n');
 return (0);
