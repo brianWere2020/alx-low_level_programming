@@ -1,4 +1,4 @@
-#include "ALX.h"
+#include "main.h"
 
 /**
  * It is a function that prints the alphabet, in lowercase, followed by a new line.
@@ -11,9 +11,8 @@ void print_alphabet(void)
 
 	while (lowercase <= 'z')
 	{
-		_putchar(lowecase);
+		_putchar(lowercase);
 		lowercase += 1;
 	}
 	_putchar('\n');
-	return (0);
 }
