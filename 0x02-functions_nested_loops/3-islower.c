@@ -1,4 +1,4 @@
-#include "AlX.h"
+#include "ALX.h"
 
 /**
  * It is a function that checks for lowercase character.

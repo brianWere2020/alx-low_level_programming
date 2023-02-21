@@ -8,19 +8,19 @@
 
 void print_times_table(int n)
 {
-	int row, column;
+	int row, col;
 	int product = 0;
 
 	if (n <= 15 && n >= 0)
 	{
 		for (row = 0; row <= n; row++)
 		{
-			for (column = 0; column <= n; column++)
+			for (col = 0; col <= n; col++)
 			{
-				product = (row * column);
+				product = (row * col);
 				if (product < 10)
 				{
-					if (column != 0)
+					if (col != 0)
 					{
 						_putchar(' ');
 						_putchar(' ');
@@ -32,17 +32,17 @@ void print_times_table(int n)
 				{
 					_putchar(' ');
 					_putchar(' ');
-					_putchar((mult / 10) + '0');
-					_putchar((mult % 10) + '0');
+					_putchar((product / 10) + '0');
+					_putchar((product % 10) + '0');
 				}
 				else
 				{
 					_putchar(' ');
-					_putchar((mult / 100) + '0');
-					_putchar(((mult % 100) / 10) + '0');
-					_putchar((mult % 10) + '0');
+					_putchar((product / 100) + '0');
+					_putchar(((product % 100) / 10) + '0');
+					_putchar((product % 10) + '0');
 				}
-				if (column != n)
+				if (col != n)
 					_putchar(',');
 			}
 			_putchar('\n');

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "ALX.h"
 
 /**
  * If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
@@ -21,16 +23,5 @@ int main(void)
 		multiple += 1;
 	}
 	printf("%d\n", res);
-	return (0);
-}
-#include <stdio.h>
-#include <stdlib.h>
-#include "ALX.h"
-/**
- * main - Entry point
- */
-int main(void)
-{
-
 	return (0);
 }
