@@ -1,20 +1,20 @@
-#include "ALX.h"
+#include "school.h"
 
 /**
- * It is a program that prints _putchar, followed by a new line.
+ * main - program that prints _putchar
  *
  * Return: int
  */
 
 int main(void)
 {
-	int i = 0;
-	char str_ptchr[7] = "_putchar";
+	int n = 0;
+	char str_ptchr[8] = "_putchar";
 
-	while (i < 7)
+	while (n < 8)
 	{
-		_putchar(str_ptchr[i]);
-		i += 1;
+		_putchar(str_ptchr[n]);
+		n += 1;
 	}
 	_putchar('\n');
 	return (0);
