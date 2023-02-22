@@ -1,9 +1,9 @@
 /*
  * File: 8-24_hours.c
- * Auth: Brennan D Baraban
+ * Auth: Brian Were
  */
 
-#include "holberton.h"
+#include "loops.h"
 
 /**
  * jack_bauer - Prints every minute of the day of

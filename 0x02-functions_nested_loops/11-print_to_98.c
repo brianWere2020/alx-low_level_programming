@@ -1,6 +1,6 @@
 /*
  * File: 11-print_to_98.c
- * Auth: Brennan D Baraban
+ * Auth: Brian Were
  */
 
 #include <stdio.h>
@@ -26,4 +26,3 @@ void print_to_98(int n)
 		printf("%d\n", n);
 	}
 }
-

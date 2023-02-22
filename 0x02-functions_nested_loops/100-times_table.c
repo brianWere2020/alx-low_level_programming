@@ -1,9 +1,9 @@
 /*
  * File: 100-times_table.c
- * Auth: Brennan D Baraban
+ * Auth: Brian Were
  */
 
-#include "holberton.h"
+#include "loops.h"
 
 /**
  * print_times_table - Prints the times table of the input,
@@ -12,7 +12,7 @@
  */
 void print_times_table(int n)
 {
-	int num, mult, prod;
+	int num, mult, result;
 
 	if (n >= 0 && n <= 15)
 	{
@@ -25,23 +25,23 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 
-				prod = num * mult;
+				result = num * mult;
 
-				if (prod <= 99)
+				if (result <= 99)
 					_putchar(' ');
-				if (prod <= 9)
+				if (result <= 9)
 					_putchar(' ');
 
-				if (prod >= 100)
+				if (result >= 100)
 				{
-					_putchar((prod / 100) + '0');
-					_putchar(((prod / 10)) % 10 + '0');
+					_putchar((result / 100) + '0');
+					_putchar(((result / 10)) % 10 + '0');
 				}
-				else if (prod <= 99 && prod >= 10)
+				else if (result <= 99 && result >= 10)
 				{
-					_putchar((prod / 10) + '0');
+					_putchar((result / 10) + '0');
 				}
-				_putchar((prod % 10) + '0');
+				_putchar((result % 10) + '0');
 			}
 			_putchar('\n');
 		}

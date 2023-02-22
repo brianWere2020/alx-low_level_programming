@@ -1,9 +1,9 @@
 /*
  * File: 3-islower.c
- * Auth: Brennan D Baraban
+ * Auth: Brian Were
  */
 
-#include "holberton.h"
+#include "loops.h"
 
 /**
  * _islower - Checks if a character is lowercase.
