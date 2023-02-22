@@ -11,6 +11,7 @@ void print_to_98(int n)
 {
 	if (n <= 98)
 	{
+<<<<<<< HEAD
 		for (; n <= 98; n++)
 		{
 			if (n == 98)
@@ -23,10 +24,23 @@ void print_to_98(int n)
 			{
 				printf("%d, ", n);
 			}
+=======
+		for (; n < 98; n++)
+		{
+			printf("%d, ", n);
 		}
 	}
-	else
+	else if (n > 98)
 	{
+		for (; n > 98; n--)
+		{
+			printf("%d, ", n);
+>>>>>>> 09bfab7c36756e6b327b011a7da0713592e892b4
+		}
+	}
+	if (n == 98)
+	{
+<<<<<<< HEAD
 		for (; n >= 98; n--)
 		{
 			if (n == 98)
@@ -40,6 +54,9 @@ void print_to_98(int n)
 				printf("%d, ", n);
 			}
 		}
+=======
+		printf("%d\n", n);
+>>>>>>> 09bfab7c36756e6b327b011a7da0713592e892b4
 	}
 }
 
