@@ -3,7 +3,7 @@
  * Auth: Brian Were
  */
 
-#include "loops.h"
+#include "main.h"
 
 /**
  * print_times_table - Prints the times table of the input,

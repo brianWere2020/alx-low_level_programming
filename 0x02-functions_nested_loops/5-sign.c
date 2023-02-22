@@ -3,7 +3,7 @@
  * Auth: Brian Were
  */
 
-#include "loops.h"
+#include "main.h"
 
 /**
  * print_sign - Prints the sign of a number.
