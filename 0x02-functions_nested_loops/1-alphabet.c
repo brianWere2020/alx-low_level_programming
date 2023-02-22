@@ -1,19 +1,19 @@
-#include "ALX.h"
+#include "holberton.h"
 
 /**
- * It is a function that prints the alphabet, in lowercase, followed by a new line.
- * Returns: nothing.
- */
-
+  * print_alphabet - Make the alphabet
+  *
+  * Return: void
+  */
 void print_alphabet(void)
 {
-	int lowercase = 'a';
+	char c;
 
-	while (lowercase <= 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(lowecase);
-		lowercase += 1;
+		_putchar(c);
 	}
+
 	_putchar('\n');
-	return (0);
 }
+

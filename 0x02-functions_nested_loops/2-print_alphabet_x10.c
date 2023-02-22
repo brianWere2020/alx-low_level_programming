@@ -1,22 +1,25 @@
-#include "ALX.h"
+#include "holberton.h"
+
 /**
- * It is a function that prints 10 times the alphabet, in lowercase, followed by a new line.
- *
- * Return: x10 a-z
- */
+  * print_alphabet_x10 - Make alphabet x10 times
+  *
+  * Return: void
+  */
 void print_alphabet_x10(void)
 {
-	int i, count;
+	char c;
+	int i = 0;
 
-	count = 0;
-
-	while (count < 10)
+	while (i <= 9)
 	{
-		for (i = 'a'; i <= 'z'; i++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-			_putchar(i);
+			_putchar(c);
 		}
-		count++;
+
 		_putchar('\n');
+
+		i++;
 	}
 }
+

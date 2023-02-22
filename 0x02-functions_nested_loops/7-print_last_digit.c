@@ -1,21 +1,24 @@
-#include "ALX.h"
+#include "holberton.h"
+
 /**
- * It is a function that prints the last digit of a number.
- * Prototype: int print_last_digit(int);
- * Returns the value of the last digit
- */
-int print_last_digit(int num)
+  * print_last_digit - Prints the last digit of a number
+  * @n: The number to be treated
+  *
+  * Return: Value of the last digit of number
+  */
+int print_last_digit(int n)
 {
-	int lastDigit;
+	int last;
 
-	lastDigit = (numb % 10);
+	last = n % 10;
 
-	if (lastDigit < 0)
+	if (last < 0)
 	{
-		lastDigit = (-1 * lastDigit);
+		last = last * -1;
 	}
 
-	_putchar(lastDigit + '0');
-	return (lastDigit);
+	_putchar(last + '0');
+
+	return (last);
 }
 

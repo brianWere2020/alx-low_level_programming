@@ -1,51 +1,52 @@
- #include "ALX.h"
+#include "holberton.h"
 
 /**
- * This is a function that prints the n times table, starting with 0.
- * Prototype: void print_times_table(int n);
- * If n is greater than 15 or less than 0 the function should not print anything
- */
-
+  * print_times_table - Prints a multiplication table up to param
+  * @n: The number to be treated
+  *
+  * Return: Number matrix
+  */
 void print_times_table(int n)
 {
-	int row, column;
-	int product = 0;
+	int x, y, z;
 
-	if (n <= 15 && n >= 0)
+	if (n >= 0 && n <= 14)
 	{
-		for (row = 0; row <= n; row++)
+		for (x = 0; x <= n; x++)
 		{
-			for (column = 0; column <= n; column++)
+			for (y = 0; y <= n; y++)
 			{
-				product = (row * column);
-				if (product < 10)
+				z = x * y;
+				if (z > 99)
 				{
-					if (column != 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-					}
-					_putchar(product + '0');
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
 				}
-				else if (product < 100)
+				else if (z > 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((mult / 10) + '0');
-					_putchar((mult % 10) + '0');
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
 				}
 				else
 				{
-					_putchar(' ');
-					_putchar((mult / 100) + '0');
-					_putchar(((mult % 100) / 10) + '0');
-					_putchar((mult % 10) + '0');
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
 				}
-				if (column != n)
-					_putchar(',');
 			}
 			_putchar('\n');
 		}
 	}
 }
+

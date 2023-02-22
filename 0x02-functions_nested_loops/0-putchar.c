@@ -1,21 +1,22 @@
-#include "ALX.h"
+#include "holberton.h"
 
 /**
- * It is a program that prints _putchar, followed by a new line.
- *
- * Return: int
- */
-
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
 int main(void)
 {
-	int i = 0;
-	char str_ptchr[7] = "_putchar";
-
-	while (i < 7)
-	{
-		_putchar(str_ptchr[i]);
-		i += 1;
-	}
+	_putchar('H');
+	_putchar('o');
+	_putchar('l');
+	_putchar('b');
+	_putchar('e');
+	_putchar('r');
+	_putchar('t');
+	_putchar('o');
+	_putchar('n');
 	_putchar('\n');
+
 	return (0);
 }

@@ -1,18 +1,22 @@
-#include "ALX.h"
+#include "holberton.h"
 
 /**
- * It is a a function that computes the absolute value of an integer.
- * Prototype: int _abs(int);
- * FYI: The standard library provides a similar function: abs. Run man abs to learn more.
- */
-
-int _abs(int i)
+  * _abs - Computes the absolute value of an integer.
+  * @c: The number to be computed.
+  *
+  * Return: Absolute value of number or zero
+  */
+int _abs(int c)
 {
-	if (i < 0)
+	if (c < 0)
 	{
-		i = i * (-1);
-		return (i);
+		int abs_val;
+
+		abs_val = c * -1;
+
+		return (abs_val);
 	}
-	else
-		return (i);
+
+	return (c);
 }
+
