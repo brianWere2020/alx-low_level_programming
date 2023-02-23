@@ -12,3 +12,4 @@ int main(void)
 	print_triangle(1);
 	print_triangle(0);
 	return (0);
+}
