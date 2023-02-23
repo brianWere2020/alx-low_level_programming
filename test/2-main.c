@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code for ALX Cohort 12 students.
@@ -7,7 +8,7 @@
  */
 int main(void)
 {
-	print_square(2);
-	print_square(10);
-	print_square(0);
+	printf("%d\n", mul(98, 1024));
+	printf("%d\n", mul(-402, 4096));
 	return (0);
+}
