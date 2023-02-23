@@ -3,7 +3,7 @@
  * Auth: Brian Were
  */
 
-#include "loops.h"
+#include "main.h"
 
 /**
  * add - Adds two integers.
