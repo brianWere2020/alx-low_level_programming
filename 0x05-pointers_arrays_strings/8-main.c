@@ -1,4 +1,4 @@
-#include "main.h.h"
+#include "main.h"
 
 /**
  * main - check the code for ALX cohort 12 students.
