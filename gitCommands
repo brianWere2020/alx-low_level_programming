@@ -1,5 +1,5 @@
 #!/bin/bash
 git pull
 git add .
-git commit -m '0x05. C - Pointers, arrays and strings'
+git commit -m '0x06. C - More pointers, arrays and strings'
 git push
