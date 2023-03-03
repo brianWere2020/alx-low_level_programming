@@ -1,14 +1,14 @@
-#include "../holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for ALX Cohort 12 students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s[] = "Holberton School!\n";
+	char s[] = "Look up!\n";
 	char *p;
 
 	p = string_toupper(s);

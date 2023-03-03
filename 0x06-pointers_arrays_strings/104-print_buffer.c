@@ -1,9 +1,9 @@
 /*
- * File: 103-print_buffer.c
- * Auth: Brennan D Baraban
+ * File: 104-print_buffer.c
+ * Auth: Brian Were
  */
 
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**

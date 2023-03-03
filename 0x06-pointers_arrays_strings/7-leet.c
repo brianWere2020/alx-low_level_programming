@@ -1,9 +1,9 @@
 /*
  * File: 7-leet.c
- * Auth: Brennan D Baraban
+ * Auth: Brian Were
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * leet - Encodes a string to 1337.
